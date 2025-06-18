@@ -10,6 +10,55 @@ This project implements a machine learning-based solution for detecting fake new
 - Evaluation metrics for model performance
 - Interactive Jupyter notebook for analysis and visualization
 
+  ## Working
+
+- Loads and merges real and fake news datasets
+- Cleans and preprocesses text using NLP techniques
+- Extracts features using:
+  - CountVectorizer
+  - TF-IDF
+  - Word2Vec
+- Trains models using Logistic Regression
+- Evaluates models using classification reports and confusion matrices
+- Visualizes word clouds and label distribution
+
+---
+
+## 🛠️ Libraries Used
+
+| Library | Purpose |
+|--------|---------|
+| `pandas`, `numpy` | Data loading and manipulation |
+| `matplotlib`, `seaborn`, `wordcloud` | Visualization |
+| `nltk` | Tokenization, stopword removal, lemmatization |
+| `sklearn` | Machine learning and feature extraction |
+| `gensim` | Word2Vec embeddings |
+
+---
+
+## 📊 Data Description
+
+- `Fake.csv`: Contains fake news articles
+- `True.csv`: Contains true news articles
+
+After loading:
+- A `label` column is added:
+  - `1` = True news
+  - `0` = Fake news
+
+---
+
+## 🧹 Text Preprocessing
+
+### ✅ Steps performed:
+
+1. **Lowercasing**: `Text → text`
+2. **Removing punctuation**: Removes `. , ! ? etc.`
+3. **Removing stopwords**: Removes common words like “the”, “is”
+4. **Removing HTML tags and URLs**
+5. **Removing words with digits**
+6. **Lemmatization**: Converts words to their dictionary form (`running → run`)
+
 ## Requirements
 
 To run this project, you'll need the following Python packages:
