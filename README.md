@@ -10,7 +10,7 @@ This project implements a machine learning-based solution for detecting fake new
 - Evaluation metrics for model performance
 - Interactive Jupyter notebook for analysis and visualization
 
-  ## Working
+## Working
 
 - Loads and merges real and fake news datasets
 - Cleans and preprocesses text using NLP techniques
@@ -24,7 +24,7 @@ This project implements a machine learning-based solution for detecting fake new
 
 ---
 
-## 🛠️ Libraries Used
+## Libraries Used
 
 | Library | Purpose |
 |--------|---------|
@@ -36,7 +36,7 @@ This project implements a machine learning-based solution for detecting fake new
 
 ---
 
-## 📊 Data Description
+##  Data Description
 
 - `Fake.csv`: Contains fake news articles
 - `True.csv`: Contains true news articles
@@ -48,9 +48,9 @@ After loading:
 
 ---
 
-## 🧹 Text Preprocessing
+##  Text Preprocessing
 
-### ✅ Steps performed:
+###  Steps performed:
 
 1. **Lowercasing**: `Text → text`
 2. **Removing punctuation**: Removes `. , ! ? etc.`
@@ -111,25 +111,18 @@ jupyter notebook text_processing_ml.ipynb
    - Evaluate the results
    - Visualize the findings
 
-## Model Details
+## Model Evaluation
 
-The project uses various NLP techniques and machine learning algorithms to classify news articles. The implementation includes:
+Once the models are trained, we evaluate their performance using the **test set**. The following metrics are used to measure how well the model performs:
 
-- Text preprocessing (tokenization, stemming, lemmatization)
-- Feature extraction (TF-IDF, word embeddings)
-- Classification algorithms
-- Performance metrics (accuracy, precision, recall, F1-score)
+### Evaluation Metrics
 
-## Contributing
+| Metric        | Description                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| **Accuracy**  | Proportion of correctly predicted labels (true positives + true negatives) |
+| **Precision** | How many predicted positives are actually correct                           |
+| **Recall**    | How many actual positives were correctly predicted                          |
+| **F1-Score**  | Harmonic mean of precision and recall (balance between them)                |
 
-Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Dataset sources
-- Libraries and tools used
-- Research papers and resources that inspired this project 
+Created by @mohanabandlamudi
